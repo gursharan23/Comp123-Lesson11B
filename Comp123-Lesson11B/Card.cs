@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the card class 
- * Version : 0.1 Created card class
+ * Version : 0.2 Implemented Icloneable interface
  */
 namespace Comp123_Lesson11B
 {
