@@ -5,7 +5,7 @@ using System.Text;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the demo class for Lesson 11
- * Version : 0.1 Created phase enum class
+ * Version : 0.1 Created face enum class
  */
 namespace Comp123_Lesson11B
 {

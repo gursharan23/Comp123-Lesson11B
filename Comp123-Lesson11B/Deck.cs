@@ -39,13 +39,14 @@ namespace Comp123_Lesson11B
         /// <returns></returns>
         public override string ToString()
         {
-            string output = "";
+            string outputString = "";
+
             foreach (Card card in this)
             {
-                output = "The " + card.Face + "of" + card.Suit + "\n";
+                outputString += "The " + card.Face + " of " + card.Suit + "\n";
             }
 
-            return output;
+            return outputString;
         }
     }
 }
