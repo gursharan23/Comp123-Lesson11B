@@ -7,11 +7,11 @@
       <FileName>Suit.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="Comp123_Lesson11B.Phase">
+  <Enum Name="Comp123_Lesson11B.Face">
     <Position X="2.75" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
-      <FileName>Phase.cs</FileName>
+      <FileName>Face.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

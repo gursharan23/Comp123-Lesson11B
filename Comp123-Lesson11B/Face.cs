@@ -9,7 +9,7 @@ using System.Text;
  */
 namespace Comp123_Lesson11B
 {
-    public enum Phase
+    public enum Face
     {
         Ace = 1,
         Two,
