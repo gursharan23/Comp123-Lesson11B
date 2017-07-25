@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  */
 namespace Comp123_Lesson11B
 {
-    public class Card
+    public class Card:ICloneable
     {
         //Private instance variables
         private Face __face;
@@ -30,5 +30,15 @@ namespace Comp123_Lesson11B
             this.Face = face;
             this.Suit = suit;
         }
+/// <summary>
+///  This overrides the build in Icloneable interface
+/// </summary>
+/// <returns></returns>
+        public object Clone()
+        {
+            return new Card(Face, Suit);
+        }
+
+
     }
 }

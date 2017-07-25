@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the demo class for Lesson 11
- * Version : 0.2 tested Deck class
+ * Version : 0.2 test shuffle method of the deck class
  */
 namespace Comp123_Lesson11B
 {
@@ -15,6 +15,11 @@ namespace Comp123_Lesson11B
         static void Main(string[] args)
         {
             Deck deck = new Deck();
+            Console.WriteLine("Original Deck");
+            Console.WriteLine(deck.ToString());
+            Console.WriteLine();
+            Console.WriteLine("Shuffle Deck");
+            deck.Shuffle();
             Console.WriteLine(deck.ToString());
         }
     }

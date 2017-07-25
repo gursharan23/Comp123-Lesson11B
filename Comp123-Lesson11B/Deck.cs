@@ -56,12 +56,16 @@ namespace Comp123_Lesson11B
 
         public void Shuffle()
         {
-            int firstCard;int secondCard;
+            int firstCard;int secondCard;Card tempCard;
             for (int card = 0; card < this.Count; card++)
             {
                 firstCard = this._random.Next(0, 52);
                 secondCard = this._random.Next(0,52);
-                this[secondCard].Face=
+                tempCard = (Card)this[secondCard].Clone();
+                this[secondCard].Face = this[firstCard].Face;
+                this[secondCard].Suit = this[firstCard].Suit;
+                this[firstCard].Face = tempCard.Face;
+                this[secondCard].Suit = tempCard.Suit;
             }
         }
     }
