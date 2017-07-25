@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the demo class for Lesson 11
- * Version : 0.1 Created Program class
+ * Version : 0.2 tested Deck class
  */
 namespace Comp123_Lesson11B
 {
@@ -14,6 +14,8 @@ namespace Comp123_Lesson11B
     {
         static void Main(string[] args)
         {
+            Deck deck = new Deck();
+            Console.WriteLine(deck.ToString());
         }
     }
 }

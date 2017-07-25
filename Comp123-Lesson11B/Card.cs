@@ -5,12 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
- * Description : This is the demo class for Lesson 11
+ * Description : This is the card class 
  * Version : 0.1 Created card class
  */
 namespace Comp123_Lesson11B
 {
-    class Card
+    public class Card
     {
         //Private instance variables
         private Face __face;
