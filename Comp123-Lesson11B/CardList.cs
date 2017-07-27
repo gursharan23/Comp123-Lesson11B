@@ -11,7 +11,7 @@ namespace Comp123_Lesson11B
 {
     public abstract class CardList : List<Card>
     {
-        // Priavate Instance Variables
+        // Private Instance Variables
         //Public Properties
         // Constructors
         public CardList()

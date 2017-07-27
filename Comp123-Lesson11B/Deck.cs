@@ -6,7 +6,7 @@ using System.Text;
  * Date : 25 July ,2017
  * Description : This is the deck class
  * It inherits from the generic list and uses Card as its type 
- * Version : 0.3 Refactored class to inherit CardList
+ * Version : 0.4 Refactored the ToString method
  */
 namespace Comp123_Lesson11B
 {
@@ -45,6 +45,8 @@ namespace Comp123_Lesson11B
         public override string ToString()
         {
             string outputString = "";
+            outputString+="Deck Contains : " + this.Count+"\n";
+            outputString += "================================\n";
 
             foreach (Card card in this)
             {

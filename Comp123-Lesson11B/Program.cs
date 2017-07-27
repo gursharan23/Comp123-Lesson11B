@@ -15,7 +15,7 @@ namespace Comp123_Lesson11B
         static void Main(string[] args)
         {
             Deck deck = new Deck();
-            Console.WriteLine("Original Deck: " + deck.Count);
+            
             Console.WriteLine(deck.ToString());
             Console.WriteLine();
             Console.WriteLine("Shuffle Deck: " + deck.Count);
