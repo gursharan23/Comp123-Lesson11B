@@ -6,7 +6,7 @@ using System.Text;
  * Date : 25 July ,2017
  * Description : This is the deck class
  * It inherits from the generic list and uses Card as its type 
- * Version : 0.4 Refactored the ToString method
+ * Version : 0.5 Added Deal1 method
  */
 namespace Comp123_Lesson11B
 {
@@ -69,6 +69,16 @@ namespace Comp123_Lesson11B
                 this[firstCard].Face = tempCard.Face;
                 this[secondCard].Suit = tempCard.Suit;
             }
+        }
+        /// <summary>
+        /// This method returns the top card of the list
+        /// </summary>
+        /// <returns></returns>
+        public Card Deal1()
+        {
+            Card topCard = this[0];
+            this.RemoveAt(0);
+            return topCard; 
         }
     }
 }
