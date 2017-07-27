@@ -6,11 +6,11 @@ using System.Text;
  * Date : 25 July ,2017
  * Description : This is the deck class
  * It inherits from the generic list and uses Card as its type 
- * Version : 0.2 Added shuffle method
+ * Version : 0.3 Refactored class to inherit CardList
  */
 namespace Comp123_Lesson11B
 {
-    public class Deck:List<Card>
+    public class Deck:CardList
     {
         //Private instance variables
         private Random _random;
@@ -21,7 +21,7 @@ namespace Comp123_Lesson11B
             this._initialize();
         }
 
-        private void _initialize()
+        protected override void _initialize()
         {
 
             // initialize the psuedo random number generator
@@ -59,8 +59,8 @@ namespace Comp123_Lesson11B
             int firstCard;int secondCard;Card tempCard;
             for (int card = 0; card < this.Count; card++)
             {
-                firstCard = this._random.Next(0, 52);
-                secondCard = this._random.Next(0,52);
+                firstCard = this._random.Next(0, this.Count);
+                secondCard = this._random.Next(0,this.Count);
                 tempCard = (Card)this[secondCard].Clone();
                 this[secondCard].Face = this[firstCard].Face;
                 this[secondCard].Suit = this[firstCard].Suit;
