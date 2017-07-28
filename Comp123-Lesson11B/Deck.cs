@@ -6,7 +6,7 @@ using System.Text;
  * Date : 25 July ,2017
  * Description : This is the deck class
  * It inherits from the generic list and uses Card as its type 
- * Version : 0.5 Added Deal1 method
+ * Version : 0.6 Added Deal5 method
  */
 namespace Comp123_Lesson11B
 {
@@ -16,25 +16,21 @@ namespace Comp123_Lesson11B
         private Random _random;
         //Public properties
         //Constructor
-        public Deck()
-        {
-            this._initialize();
-        }
+      
 
         protected override void _initialize()
         {
-
-            // initialize the psuedo random number generator
+            // initialize the pseudo-random number generator
             this._random = new Random();
-            //This builds a deck
+
+            // This builds the deck - fills it with cards
             for (int suit = (int)Suit.Clubs; suit <= (int)Suit.Spades; suit++)
             {
                 for (int face = (int)Face.Ace; face <= (int)Face.King; face++)
                 {
-                    this.Add(new Card((Face)(face), (Suit)(suit)));
+                    this.Add(new Card((Face)face, (Suit)suit));
                 }
             }
-           
         }
         //Private Methods
         //Public Methods
@@ -45,8 +41,9 @@ namespace Comp123_Lesson11B
         public override string ToString()
         {
             string outputString = "";
-            outputString+="Deck Contains : " + this.Count+"\n";
-            outputString += "================================\n";
+
+            outputString += "Deck Contains  Number of Cards: " + this.Count + "\n";
+            outputString += "==================================\n";
 
             foreach (Card card in this)
             {
@@ -71,14 +68,33 @@ namespace Comp123_Lesson11B
             }
         }
         /// <summary>
-        /// This method returns the top card of the list
+        /// This method returns the top card of the deck
         /// </summary>
-        /// <returns></returns>
-        public Card Deal1()
+       public Card Deal1()
         {
             Card topCard = this[0];
-            this.RemoveAt(0);
-            return topCard; 
+            this.RemoveAt(0); // this removes the top card from the deck
+
+            // for testing / debugging only
+            Console.WriteLine("Dealt 1 card - Size of Deck: " + this.Count + "\n");
+
+            return topCard;
         }
+
+        /// <summary>
+        /// This is the public method that
+        /// takes five cards from the deck
+        /// </summary>
+        /// <returns></returns>
+         public Hand Deal5()
+         {
+             Hand fiveCards = new Hand();
+             for (int i = 0; i <= 4; i++)
+             {
+                 fiveCards.Add(Deal1());
+             }
+             return fiveCards;
+         }
+
     }
 }
