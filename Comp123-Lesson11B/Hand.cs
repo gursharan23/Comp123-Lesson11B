@@ -28,8 +28,9 @@ namespace Comp123_Lesson11B
         public override string ToString()
         {
             string outputString = "";
-            outputString += "Hand Contains : " + this.Count + "\n";
-            outputString += "================================\n";
+
+            outputString += "Hand Contains  Number of Cards: " + this.Count + "\n";
+            outputString += "==================================\n";
 
             foreach (Card card in this)
             {
@@ -38,6 +39,9 @@ namespace Comp123_Lesson11B
 
             return outputString;
         }
+
+         
+       
 
     }
 }
