@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the demo class for Lesson 11
- * Version : 0.5 Tested HighestCards from Hand class 
+ * Version : 0.5 Tested HighestCards method from Hand class 
  */
 namespace Comp123_Lesson11B
 {
