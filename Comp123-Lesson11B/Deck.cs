@@ -6,7 +6,7 @@ using System.Text;
  * Date : 25 July ,2017
  * Description : This is the deck class
  * It inherits from the generic list and uses Card as its type 
- * Version : 0.6 Added Deal5 method
+ * Version : 0.6 Added the Deal5 method
  */
 namespace Comp123_Lesson11B
 {
