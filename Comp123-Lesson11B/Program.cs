@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 /*Name : Gursharan Singh
  * Date : 25 July ,2017
  * Description : This is the demo class for Lesson 11
- * Version : 0.3 Tested the new deck class
+ * Version : 0.4 Tested Deal5 method from the deal class  
  */
 namespace Comp123_Lesson11B
 {
